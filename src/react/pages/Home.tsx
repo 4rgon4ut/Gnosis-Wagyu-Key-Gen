@@ -112,41 +112,35 @@ const Home = () => {
             <span className="tw-text-sm">https://dsc.gg/ethstaker</span>
           </div>
         </div>
+      </Modal>
 
-        <Button
-          variant="contained"
-          color="primary"
-          className="tw-mt-5"
-          onClick={handleCreateNewMnemonic}
-          tabIndex={tabIndex}
-        >
-          Create New Secret Recovery Phrase
-        </Button>
+      <LandingHeader variant="h1">Welcome!</LandingHeader>
+      <KeyIcon />
+      <SubHeader>Your key generator for Ethereum 2.0 & Gnosis Beacon Chain</SubHeader>
 
-        <Tooltip title={tooltips.IMPORT_MNEMONIC}>
-          <Button
-            className="tw-text-gray tw-mt-2"
-            size="small"
-            onClick={handleUseExistingMnemonic}
-            tabIndex={tabIndex}
-          >
-            Use Existing Secret Recovery Phrase
+      <Links>
+        <InfoLabel>Github:</InfoLabel> https://github.com/stake-house/wagyu-key-gen
+        <br />
+        <InfoLabel>Support:</InfoLabel> https://discord.io/ethstaker
+      </Links>
+
+      <OptionsGrid container spacing={2} direction="column">
+        <Grid item>
+          <Button variant="contained" color="primary" onClick={handleCreateNewMnemonic} tabIndex={tabIndex(1)}>
+            Create New Secret Recovery Phrase
           </Button>
-        </Tooltip>
-      </div>
-
-      <NetworkPickerModal
-        onClose={handleCloseNetworkModal}
-        showModal={showNetworkModal}
-      />
-
-      <ReuseMnemonicActionModal
-        onClose={handleCloseReuseActionModal}
-        onSubmit={handleReuseMnemonicActionSubmit}
-        showModal={showReuseMnemonicModal}
-      />
-    </div>
-  )
+        </Grid>
+        <Grid item>
+          <Tooltip title={tooltips.IMPORT_MNEMONIC}>
+            <Button style={{color: "gray"}} size="small" onClick={handleUseExistingMnemonic} tabIndex={tabIndex(1)}>
+              Use Existing Secret Recovery Phrase
+            </Button>
+          </Tooltip>
+        </Grid>
+      </OptionsGrid>
+      <VersionFooter />
+    </StyledMuiContainer>
+  );
 };
 
 export default Home;
