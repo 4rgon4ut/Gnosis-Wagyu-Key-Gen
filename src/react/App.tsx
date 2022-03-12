@@ -31,6 +31,8 @@ import theme from "./theme";
  * prop drilling
  */
 const App: FC = (): ReactElement => {
+  const [network, setNetwork] = useState<Network>(Network.GNOSIS);
+
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
