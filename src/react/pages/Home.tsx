@@ -114,9 +114,9 @@ const Home = () => {
         </div>
       </Modal>
 
-      <LandingHeader variant="h1">Welcome! <b>THIS IS EXPERIMENTAL SOFTWARE NOT INTENDED FOR PRODUCTION USE AT THIS TIME</b></LandingHeader>
+      <LandingHeader variant="h1">Welcome! <b>THIS IS ALPHA SOFTWARE NOT INTENDED FOR PRODUCTION USE AT THIS TIME</b></LandingHeader>
       <KeyIcon />
-      <SubHeader>Your key generator for Ethereum 2.0 & Gnosis Beacon Chain</SubHeader>
+      <SubHeader variant="h2">Your key generator for Gnosis Beacon Chain</SubHeader>
 
       <Links>
         <InfoLabel>Github:</InfoLabel> https://github.com/alexpeterson91/wagyu-key-gen/issues
@@ -135,7 +135,7 @@ const Home = () => {
         </Grid>
         <Grid item>
           <Tooltip title={tooltips.IMPORT_MNEMONIC}>
-            <Button style={{color: "gray"}} size="small" onClick={handleUseExistingMnemonic} tabIndex={tabIndex(1)}>
+            <Button variant="contained" color="primary" onClick={handleUseExistingMnemonic} tabIndex={tabIndex(1)}>
               Use Existing Mnemonic Recovery Phrase
             </Button>
           </Tooltip>
