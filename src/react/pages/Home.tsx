@@ -114,7 +114,7 @@ const Home = () => {
         </div>
       </Modal>
 
-      <LandingHeader variant="h1"><b>Welcome to the Gnosis Wagyu Key Generator</b></LandingHeader> 
+      <LandingHeader variant="h1"><b>Welcome to the Gnosis Wagyu Key Generator</b></LandingHeader>
       <LandingHeader variant="h1">USE AT YOUR OWN RISK</LandingHeader>
       <KeyIcon />
       <SubHeader variant="h2">Your key generator for Gnosis Beacon Chain</SubHeader>
