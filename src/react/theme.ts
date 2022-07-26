@@ -12,10 +12,12 @@ const theme = createTheme({
   },
   typography: {
     h1: {
-      fontSize: "36px"
+      fontSize: "36px",
+      justifyContent: "Center"
     },
     h2: {
-      fontSize: "20px"
+      fontSize: "20px",
+      justifyContent: "Center"
     }
   }
 });
