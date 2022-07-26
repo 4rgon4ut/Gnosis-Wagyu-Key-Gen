@@ -61,6 +61,8 @@ alias python3=python3.10
 echo -e "\nalias python3=python3.10" >> ~/.bash_aliases
 python3 get-pip.py
 pip3 install pyinstaller
+alias python3=python3.10
+echo -e "\nalias python3=python3.10" >> ~/.bash_aliases
 
 sudo corepack enable
 git clone https://github.com/stake-house/wagyu-key-gen
