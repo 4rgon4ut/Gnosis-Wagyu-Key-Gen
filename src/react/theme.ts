@@ -1,5 +1,8 @@
-import { createTheme} from "@mui/material";
-import { amber, blue } from "@mui/material/colors";
+import { createTheme } from "@material-ui/core";
+import { green, blue } from "@material-ui/core/colors";
+import { GnosisGreen } from "./colors";
+
+
 
 const theme = createTheme({
   palette: {
