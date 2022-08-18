@@ -117,8 +117,8 @@ const Home = () => {
       <LandingHeader variant="h1"><b>Welcome to the Gnosis Wagyu Key Generator</b></LandingHeader>
       <LandingHeader variant="h1">USE AT YOUR OWN RISK</LandingHeader>
       <KeyIcon />
-      <SubHeader variant="h2">Your key generator for Gnosis Beacon Chain</SubHeader>
-      <SubHeader variant="h2"><b>THIS IS PRE-RELEASE SOFTWARE NOT INTENDED FOR PRODUCTION USE AT THIS TIME</b></SubHeader>
+      <SubHeader variant="h2">Your Key Generator for The Gnosis Beacon Chain</SubHeader>
+      <SubHeader variant="h2"><b>This Program is Still in Beta Testing; Please Use At Your Own Risk!</b></SubHeader>
 
       <Links>
         <InfoLabel>Github:</InfoLabel> https://github.com/alexpeterson91/wagyu-key-gen/issues
